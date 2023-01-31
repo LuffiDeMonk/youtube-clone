@@ -1,0 +1,66 @@
+.thumbnail-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.timestamp {
+  font-size: 0.8rem;
+  bottom: 1%;
+  right: 3%;
+  padding: 0.2rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.2em;
+  position: absolute;
+}
+.thumbnail-image-container {
+  min-width: 100%;
+  height: fit-content;
+  object-fit: contain;
+  position: relative;
+}
+.thumbnail-image-container > img {
+  width: 100%;
+}
+.thumbnail-title-container {
+  background-color: white;
+  padding: 1rem 0.5rem;
+  display: flex;
+}
+.thumbnail-title-container > .channel-icon {
+  margin-right: 1rem;
+  object-fit: contain;
+}
+.channel-icon > img {
+  border-radius: 50%;
+}
+.thumbnail-title > p {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: grey;
+  font-size: 0.7rem;
+}
+.channel-name,
+.views,
+.upload-time {
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+@media (min-width: 700px) {
+  .thumbnail-title > p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .thumbnail-image-container > img {
+    border-radius: 1rem;
+  }
+}

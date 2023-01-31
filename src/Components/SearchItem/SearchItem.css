@@ -1,0 +1,75 @@
+.search-container {
+  margin-bottom: 1rem;
+}
+.search-img {
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+}
+.search-img > img {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+.search-timestamp {
+  font-size: 0.8rem;
+  background-color: black;
+  color: white;
+  position: absolute;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  bottom: 2%;
+  right: 1.5%;
+}
+.search-icon > img {
+  border-radius: 50%;
+}
+.icon-adjust > img {
+  display: none;
+}
+.search-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.search-channel-details {
+  font-size: 0.5em;
+  color: gray;
+}
+.search-video-details {
+  margin-right: 0.5rem;
+}
+.description {
+  display: none;
+}
+@media (min-width: 990px) {
+  .search-img {
+    width: 30vw;
+  }
+  .search-img > img {
+    width: 100%;
+  }
+  .search-icon > img {
+    display: none;
+  }
+  .icon-adjust > img {
+    display: block;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+  }
+  .search-info-container {
+    display: block;
+  }
+  .search-channel-details {
+    font-size: 0.8rem;
+  }
+  .search-video-details {
+    margin-top: 1rem;
+  }
+  .description {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+}

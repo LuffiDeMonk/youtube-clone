@@ -1,0 +1,15 @@
+.video-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.video-channel-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.video-channel-data > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
